@@ -1,0 +1,97 @@
+:root {
+  --primary: #95F;
+  --secondary: #FFF2;
+  --tertiary: #0002;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: var(--primary);
+  flex-direction: column;
+}
+
+body,
+li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#container {
+  height: 75%;
+  width: 75%;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.2rem 0.2rem var(--tertiary);
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+#themes {
+  margin-top: 1%;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.theme {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+}
+
+#redt {
+  background-image: linear-gradient(orange, orangered);
+}
+
+#bluet {
+  background-image: linear-gradient(lightblue, cyan);
+}
+
+#greent {
+  background-image: linear-gradient(lightseagreen, seagreen);
+}
+
+li {
+  height: 3rem;
+  margin: 5%;
+  background-color: var(--secondary);
+  box-shadow: 0.1rem 0.2rem 0.2rem var(--tertiary);
+  padding: 0 1rem 0 1rem;
+}
+
+.sender {
+  margin-left: auto;
+  border-radius: 1rem 1rem 0 1rem;
+}
+
+.receiver {
+  margin-right: auto;
+  border-radius: 1rem 1rem 1rem 0;
+}
+
+input {
+  height: 3rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  background-color: var(--secondary);
+  width: 90%;
+  margin-top: auto;
+  padding-left: 5%;
+  margin-bottom: 2%;
+  box-shadow: 0.05rem 0.1rem 0.1rem var(--primary);
+}
+
+input::placeholder {
+  color: var(--tertiary);
+}
