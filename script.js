@@ -32,7 +32,7 @@ theme[4].onclick = function() {
 
 document.getElementById('send').onclick = function() {
   var input = document.querySelector('input');
-  var list = document.createElement('li');
+  var list = document.createElement('p');
   list.innerText = input.value;
   list.className = "sender";
   document.getElementById('messages').appendChild(list);

@@ -1,6 +1,6 @@
 :root {
-  --primary: lightskyblue;
-  --secondary: deepskyblue;
+  --primary: lightseagreen;
+  --secondary: teal;
   --lighter: #FFF8;
   --darker: #0002;
   --text: #0008;
@@ -23,10 +23,10 @@ li {
 }
 
 
-h1{
+h1 {
   color: transparent;
   font-family: monospace;
-  -webkit-text-stroke: 0.05rem white;
+  -webkit-text-stroke: 1px white;
 }
 
 #themes {
@@ -69,20 +69,22 @@ h1{
 #messages {
   height: auto;
   width: 100%;
-  list-style-type: none;
-  padding: 0;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 }
 
-li {
-  height: 2rem;
-  margin: 5%;
+p {
+  min-height: 2rem;
+  margin: 2%;
   background-color: white;
   box-shadow: 0.1rem 0.2rem 0.2rem var(--darker);
-  padding: 0 1rem 0 1rem;
+  padding: 0.1rem 1rem 0.1rem 1rem;
   border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  max-width: 50%;
+  word-break: break-word;
 }
 
 .sender {
