@@ -1,6 +1,6 @@
 :root {
-  --primary: mediumpurple;
-  --secondary: rebeccapurple;
+  --primary: lightskyblue;
+  --secondary: deepskyblue;
   --lighter: #FFF8;
   --darker: #0002;
   --text: #0008;
@@ -23,12 +23,16 @@ li {
 }
 
 
+h1{
+  color: transparent;
+  font-family: monospace;
+  -webkit-text-stroke: 0.1rem white;
+}
 
 #themes {
   height: 3rem;
-  display: flex;
+  display: none;
   width: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -69,12 +73,13 @@ li {
   padding: 0;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 }
 
 li {
   height: 2rem;
   margin: 5%;
-  background-color: var(--lighter);
+  background-color: white;
   box-shadow: 0.1rem 0.2rem 0.2rem var(--darker);
   padding: 0 1rem 0 1rem;
   border-radius: 2rem;
@@ -94,7 +99,7 @@ input {
   width: 80%;
   border: none;
   outline: none;
-  background-color: var(--lighter);
+  background-color: white;
   padding-left: 5%;
   box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
   margin-right: auto;
@@ -119,7 +124,6 @@ span {
   border: none;
   border-radius: 50%;
   font-size: 1.5rem;
-  background-color: var(--lighter);
-  color: var(--text);
+  background-color: white;
   box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
 }

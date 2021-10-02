@@ -38,3 +38,14 @@ document.getElementById('send').onclick = function() {
   document.getElementById('messages').appendChild(list);
   input.value="";
 }
+var count=1;
+document.querySelector('h1').onclick=function(){
+  
+  if(count==1){
+    count++;
+  document.getElementById('themes').style.display="flex";}
+  else{
+    count--;
+    document.getElementById('themes').style.display="none";
+  }
+}
