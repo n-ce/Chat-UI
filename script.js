@@ -1,11 +1,16 @@
-document.getElementById('send').onclick = function() {
-  var input = document.querySelector('input');
-  var list = document.createElement('p');
-  list.innerText = input.value;
-  list.className = "sender";
-  document.getElementById('messages').appendChild(list);
-  input.value = "";
+var input = document.querySelector('input');
+
+function send() {
+  if (input.value != "") {
+    new Audio('send.ogg').play();
+    var list = document.createElement('p');
+    list.innerText = input.value;
+    list.className = "sender";
+    document.getElementById('messages').appendChild(list);
+    input.value = "";
+  }
 }
+
 var a = 1;
 document.querySelector('h1').onclick = function() {
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+
 :root {
   --primary:#076;
   --secondary: #065;
@@ -11,11 +13,11 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: 'Noto Sans Display', monospace;
   background-image: linear-gradient(160deg, var(--primary), var(--secondary));
 }
 
-body,
-li {
+body{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,9 +27,7 @@ li {
 
 h1 {
   color: transparent;
-  font-family: monospace;
   -webkit-text-stroke: 1px white;
-  font-style: italic;
 }
 
 
@@ -50,11 +50,11 @@ p {
   align-items: center;
   max-width: 50%;
   word-break: break-word;
+  animation: go 0.5s ease-in-out;
 }
 
 .sender {
   margin-left: auto;
-
 }
 
 .receiver {
@@ -137,4 +137,11 @@ span {
 
 #tealt {
   background-image: linear-gradient(#076, #065);
+}
+
+@keyframes go{
+  from{
+    margin-top: 100%;
+    background-color: transparent;
+  }
 }
