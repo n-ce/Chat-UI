@@ -60,6 +60,6 @@ theme[4].onclick = function() {
 }
 
 theme[5].onclick = function() {
-  themeChange('lightseagreen', 'teal');
+  themeChange('#076', '065');
   localStorage.clear();
 }
