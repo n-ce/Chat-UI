@@ -26,7 +26,7 @@ li {
 h1{
   color: transparent;
   font-family: monospace;
-  -webkit-text-stroke: 0.1rem white;
+  -webkit-text-stroke: 0.05rem white;
 }
 
 #themes {
