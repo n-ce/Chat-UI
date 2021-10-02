@@ -37,6 +37,7 @@ if (localStorage.getItem('scheme')) {
 function themeChange(theme, theme2) {
   document.querySelector(':root').style.setProperty('--primary', theme);
   document.querySelector(':root').style.setProperty('--secondary', theme2);
+  document.querySelector('meta[name="theme-color"]').setAttribute("content", theme)
   localStorage.setItem('scheme', theme);
   localStorage.setItem('scheme2', theme2);
 }

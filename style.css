@@ -1,7 +1,7 @@
 :root {
-  --primary: lightseagreen;
-  --secondary: teal;
-  --lighter: #FFF8;
+  --primary:#076;
+  --secondary: #065;
+  --lighter: #FFFD;
   --darker: #0002;
   --text: #0008;
 }
@@ -66,7 +66,7 @@ input {
   width: 80%;
   border: none;
   outline: none;
-  background-color: white;
+  background-color: var(--lighter);
   padding-left: 5%;
   box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
   margin-right: auto;
@@ -91,7 +91,7 @@ span {
   border: none;
   border-radius: 50%;
   font-size: 1.5rem;
-  background-color: white;
+  background-color: var(--lighter);
   box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
 }
 
