@@ -31,8 +31,10 @@ theme[4].onclick = function() {
 }
 
 document.getElementById('send').onclick = function() {
+  var input = document.querySelector('input');
   var list = document.createElement('li');
-  list.innerText = document.querySelector('input').value;
+  list.innerText = input.value;
   list.className = "sender";
   document.getElementById('messages').appendChild(list);
+  input.value="";
 }

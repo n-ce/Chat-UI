@@ -31,7 +31,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--darker);
 }
 
 .theme {
@@ -109,8 +108,8 @@ input::placeholder {
 span {
   display: flex;
   margin-top: auto;
-  margin-bottom: 3rem;
-  width: 90%;
+  margin-bottom: 1rem;
+  width: 95%;
   height: 3rem;
 }
 
