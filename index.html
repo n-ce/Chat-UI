@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chat UI</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <div id="container">
-    <div id="themes">
-      <button class="theme" id="redt"></button>
-      <button class="theme" id="bluet"></button>
-      <button class="theme" id="greent"></button>
-    </div>
+  <div id="themes">
+    <button class="theme" id="redt"></button>
+    <button class="theme" id="bluet"></button>
+    <button class="theme" id="greent"></button>
+  </div>
+  <div id="messages">
     <li class="sender">sender</li>
     <li class="receiver">receiver</li>
-    <input placeholder="Enter your Message" />
   </div>
+  <span>
+    <input placeholder="Enter your Message" />
+    <button id="send" type="submit" class="far fa-paper-plane"></button>
+  </span>
   <script src="script.js"></script>
 </body>
 

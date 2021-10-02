@@ -1,7 +1,9 @@
 :root {
   --primary: #95F;
-  --secondary: #FFF2;
+  --primary2:#73D;
+  --secondary: #FFF8;
   --tertiary: #0002;
+  --text:#0008;
 }
 
 html,
@@ -9,8 +11,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-color: var(--primary);
-  flex-direction: column;
+  background-image:linear-gradient(160deg,var(--primary),var(--primary2));
 }
 
 body,
@@ -18,28 +19,19 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-
-#container {
-  height: 75%;
-  width: 75%;
-  background-color: var(--secondary);
-  border-radius: 1rem;
-  box-shadow: 0.1rem 0.2rem 0.2rem var(--tertiary);
-  list-style-type: none;
-  padding: 0;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-
 }
+
+
 
 #themes {
-  margin-top: 1%;
+  height: 3rem;
   display: flex;
   width: 100%;
+  display:flex;
+  align-items:center;
   justify-content: space-evenly;
+  background-color: var(--tertiary);
 }
 
 .theme {
@@ -61,37 +53,65 @@ li {
   background-image: linear-gradient(lightseagreen, seagreen);
 }
 
+#messages{
+  height:80%;
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 li {
-  height: 3rem;
+  height: 2rem;
   margin: 5%;
   background-color: var(--secondary);
   box-shadow: 0.1rem 0.2rem 0.2rem var(--tertiary);
   padding: 0 1rem 0 1rem;
+  border-radius: 2rem;
 }
 
 .sender {
   margin-left: auto;
-  border-radius: 1rem 1rem 0 1rem;
+
 }
 
 .receiver {
   margin-right: auto;
-  border-radius: 1rem 1rem 1rem 0;
 }
 
 input {
   height: 3rem;
+  width: 80%;
   border: none;
-  border-radius: 1rem;
   outline: none;
   background-color: var(--secondary);
-  width: 90%;
-  margin-top: auto;
   padding-left: 5%;
-  margin-bottom: 2%;
-  box-shadow: 0.05rem 0.1rem 0.1rem var(--primary);
+  box-shadow: 0.05rem 0.1rem 0.1rem var(--tertiary);
+  margin-right: auto;
+  border-radius: 2rem;
 }
 
 input::placeholder {
-  color: var(--tertiary);
+  color: var(--text);
+}
+
+span {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 3rem;
+  width: 90%;
+  height: 3rem;
+}
+
+#send {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: var(--secondary);
+  color: var(--text);
+  box-shadow: 0.05rem 0.1rem 0.1rem var(--tertiary);
 }
