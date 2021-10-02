@@ -1,3 +1,31 @@
+document.getElementById('send').onclick = function() {
+  var input = document.querySelector('input');
+  var list = document.createElement('p');
+  list.innerText = input.value;
+  list.className = "sender";
+  document.getElementById('messages').appendChild(list);
+  input.value = "";
+}
+var a = 1;
+document.querySelector('h1').onclick = function() {
+
+  if (a == 1) {
+    a = 0;
+    document.getElementById('themes').style.display = "flex";
+  }
+  else {
+    a = 1;
+    document.getElementById('themes').style.display = "none";
+  }
+}
+
+
+
+
+
+// Themes
+
+
 var theme = document.getElementsByClassName('theme');
 
 
@@ -27,25 +55,10 @@ theme[3].onclick = function() {
   themeChange('mediumpurple', 'rebeccapurple');
 }
 theme[4].onclick = function() {
-  themeChange('dimgray', 'black');
+  themeChange('black', 'black');
 }
 
-document.getElementById('send').onclick = function() {
-  var input = document.querySelector('input');
-  var list = document.createElement('p');
-  list.innerText = input.value;
-  list.className = "sender";
-  document.getElementById('messages').appendChild(list);
-  input.value="";
-}
-var count=1;
-document.querySelector('h1').onclick=function(){
-  
-  if(count==1){
-    count++;
-  document.getElementById('themes').style.display="flex";}
-  else{
-    count--;
-    document.getElementById('themes').style.display="none";
-  }
+theme[5].onclick = function() {
+  themeChange('lightseagreen', 'teal');
+  localStorage.clear();
 }

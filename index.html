@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="lightskyblue" />
+  <meta name="theme-color" content="teal" />
   <title>Chat UI</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -12,20 +12,25 @@
 
 <body>
   <h1>C h a t &nbsp; U I</h1>
+ 
+  <div id="messages">
+    <p class="receiver">Welcome to Chat-UI!</p>
+  </div>
+ 
+  <span>
+    <input placeholder="Enter your Message" />
+    <button id="send" type="submit" class="far fa-paper-plane"></button>
+  </span>
+
   <div id="themes">
     <button class="theme" id="redt"></button>
     <button class="theme" id="bluet"></button>
     <button class="theme" id="greent"></button>
     <button class="theme" id="purplet"></button>
     <button class="theme" id="blackt"></button>
+    <button class="theme" id="tealt"></button>
   </div>
-  <div id="messages">
-    <p class="receiver">Welcome to Chat-UI!</p>
-  </div>
-  <span>
-    <input placeholder="Enter your Message" />
-    <button id="send" type="submit" class="far fa-paper-plane"></button>
-  </span>
+ 
   <script src="script.js"></script>
 </body>
 

@@ -27,42 +27,7 @@ h1 {
   color: transparent;
   font-family: monospace;
   -webkit-text-stroke: 1px white;
-}
-
-#themes {
-  height: 3rem;
-  display: none;
-  width: 100%;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.theme {
-  border-radius: 50%;
-  height: 1.5rem;
-  width: 1.5rem;
-  border: none;
-  box-shadow: 0 0 0 0.2rem var(--darker);
-}
-
-#redt {
-  background-image: linear-gradient(orange, darkorange);
-}
-
-#bluet {
-  background-image: linear-gradient(lightskyblue, deepskyblue);
-}
-
-#greent {
-  background-image: linear-gradient(mediumseagreen, seagreen);
-}
-
-#purplet {
-  background-image: linear-gradient(mediumpurple, rebeccapurple);
-}
-
-#blackt {
-  background-image: linear-gradient(dimgray, black);
+  font-style: italic;
 }
 
 
@@ -128,4 +93,48 @@ span {
   font-size: 1.5rem;
   background-color: white;
   box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
+}
+
+
+/*themes*/
+
+
+#themes {
+  height: 3rem;
+  display: none;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.theme {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  border: none;
+  box-shadow: 0 0 0 0.2rem var(--darker);
+}
+
+#redt {
+  background-image: linear-gradient(orange, darkorange);
+}
+
+#bluet {
+  background-image: linear-gradient(lightskyblue, deepskyblue);
+}
+
+#greent {
+  background-image: linear-gradient(mediumseagreen, seagreen);
+}
+
+#purplet {
+  background-image: linear-gradient(mediumpurple, rebeccapurple);
+}
+
+#blackt {
+  background-color: black;
+}
+
+#tealt {
+  background-image: linear-gradient(lightseagreen, teal);
 }
