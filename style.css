@@ -1,9 +1,9 @@
 :root {
-  --primary: #95F;
-  --primary2:#73D;
-  --secondary: #FFF8;
-  --tertiary: #0002;
-  --text:#0008;
+  --primary: mediumpurple;
+  --secondary: rebeccapurple;
+  --lighter: #FFF8;
+  --darker: #0002;
+  --text: #0008;
 }
 
 html,
@@ -11,7 +11,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-image:linear-gradient(160deg,var(--primary),var(--primary2));
+  background-image: linear-gradient(160deg, var(--primary), var(--secondary));
 }
 
 body,
@@ -28,46 +28,55 @@ li {
   height: 3rem;
   display: flex;
   width: 100%;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  background-color: var(--tertiary);
+  background-color: var(--darker);
 }
 
 .theme {
   border-radius: 50%;
-  height: 2rem;
-  width: 2rem;
+  height: 1.5rem;
+  width: 1.5rem;
   border: none;
+  box-shadow: 0 0 0 0.2rem var(--darker);
 }
 
 #redt {
-  background-image: linear-gradient(orange, orangered);
+  background-image: linear-gradient(orange, darkorange);
 }
 
 #bluet {
-  background-image: linear-gradient(lightblue, cyan);
+  background-image: linear-gradient(lightskyblue, deepskyblue);
 }
 
 #greent {
-  background-image: linear-gradient(lightseagreen, seagreen);
+  background-image: linear-gradient(mediumseagreen, seagreen);
 }
 
-#messages{
-  height:80%;
+#purplet {
+  background-image: linear-gradient(mediumpurple, rebeccapurple);
+}
+
+#blackt {
+  background-image: linear-gradient(dimgray, black);
+}
+
+
+#messages {
+  height: auto;
   width: 100%;
   list-style-type: none;
   padding: 0;
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
 li {
   height: 2rem;
   margin: 5%;
-  background-color: var(--secondary);
-  box-shadow: 0.1rem 0.2rem 0.2rem var(--tertiary);
+  background-color: var(--lighter);
+  box-shadow: 0.1rem 0.2rem 0.2rem var(--darker);
   padding: 0 1rem 0 1rem;
   border-radius: 2rem;
 }
@@ -86,9 +95,9 @@ input {
   width: 80%;
   border: none;
   outline: none;
-  background-color: var(--secondary);
+  background-color: var(--lighter);
   padding-left: 5%;
-  box-shadow: 0.05rem 0.1rem 0.1rem var(--tertiary);
+  box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
   margin-right: auto;
   border-radius: 2rem;
 }
@@ -111,7 +120,7 @@ span {
   border: none;
   border-radius: 50%;
   font-size: 1.5rem;
-  background-color: var(--secondary);
+  background-color: var(--lighter);
   color: var(--text);
-  box-shadow: 0.05rem 0.1rem 0.1rem var(--tertiary);
+  box-shadow: 0.05rem 0.1rem 0.1rem var(--darker);
 }
