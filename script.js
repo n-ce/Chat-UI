@@ -1,30 +1,36 @@
-var input = document.querySelector('input');
 var c = 1;
-var vol = document.querySelector('.fa-volume-up');
-vol.onclick = function() {
+const input = document.querySelector('input');
+const vol = document.querySelector('.fa-volume-up');
+vol.addEventListener('click', function() {
   c++;
   vol.classList.toggle("off");
-}
+});
 
 function send() {
   if (input.value != "") {
-
-    if (c % 2 == 1) {
-      new Audio('send.ogg').play();
-    }
-    var send = document.createElement('p');
+    const message = document.getElementById('messages');
+    const send = document.createElement('p');
+    const recv = send.cloneNode(true);
     send.innerText = input.value;
     send.className = "sender";
-    document.getElementById('messages').appendChild(send);
-    input.value = "";
-  }
-}
-document.onkeypress = function() {
-  if ("".key = 13) {
-    send();
+    message.appendChild(send);
+    fetch('dataset.json')
+      .then(res => res.json())
+      .then(data => {
+        const foundIndex = data.findIndex(d => d.s.toLowerCase() === input.value.toLowerCase());
+        recv.innerText = foundIndex > -1 ? data[foundIndex].r : "I don't understand";
+      });
+    recv.className = "receiver";
+    message.appendChild(recv);
+    if (c % 2 == 1) { new Audio('send.ogg').play() }
+    setInterval(function() { input.value = '' }, 100)
   }
 }
 
+
+
+document.getElementById('send').addEventListener('click', send);
+input.addEventListener('keydown', (e)=> { if (e.key === 'Enter') { send() }})
 
 // Themes
 
@@ -33,12 +39,12 @@ document.querySelector('h1').onclick = function() {
 
   if (a == 1) {
     a = 0;
-    document.querySelector('h1').style.color="white";
+    document.querySelector('h1').style.color = "white";
     document.getElementById('themes').style.display = "flex";
   }
   else {
     a = 1;
-    document.querySelector('h1').style.color="transparent";
+    document.querySelector('h1').style.color = "transparent";
     document.getElementById('themes').style.display = "none";
   }
 }

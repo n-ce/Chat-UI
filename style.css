@@ -41,9 +41,9 @@ a:focus{
 
 #header{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 a{
   text-decoration: none;
