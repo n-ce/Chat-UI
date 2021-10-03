@@ -23,7 +23,7 @@ function send() {
     recv.className = "receiver";
     message.appendChild(recv);
     if (c % 2 == 1) { new Audio('send.ogg').play() }
-    setInterval(function() { input.value = '' }, 100)
+    setTimeout(function() { input.value = '' }, 100)
   }
 }
 
