@@ -1,15 +1,24 @@
 var input = document.querySelector('input');
 
+
 function send() {
   if (input.value != "") {
     new Audio('send.ogg').play();
-    var list = document.createElement('p');
-    list.innerText = input.value;
-    list.className = "sender";
-    document.getElementById('messages').appendChild(list);
+    var send = document.createElement('p');
+    send.innerText = input.value;
+    send.className = "sender";
+    document.getElementById('messages').appendChild(send);
     input.value = "";
   }
 }
+document.onkeypress = function() {
+  if ("".key = 13) {
+    send();
+  }
+}
+
+
+// Themes
 
 var a = 1;
 document.querySelector('h1').onclick = function() {
@@ -23,12 +32,6 @@ document.querySelector('h1').onclick = function() {
     document.getElementById('themes').style.display = "none";
   }
 }
-
-
-
-
-
-// Themes
 
 
 var theme = document.getElementsByClassName('theme');
