@@ -25,12 +25,36 @@ body{
 }
 
 
-h1 {
+h1,a,.fa-volume-up {
   color: transparent;
   -webkit-text-stroke: 1px white;
+  margin: 0;
+  padding: 0;
+  transition: color 0.5s ease-in-out;
 }
 
+a:focus{
+  color:white;
+}
+.off{-webkit-text-stroke-color: #fff7;}
 
+
+#header{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.fa-volume-up{
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+}
 #messages {
   height: auto;
   width: 100%;
@@ -77,7 +101,7 @@ input::placeholder {
   color: var(--text);
 }
 
-span {
+#type {
   display: flex;
   margin-top: auto;
   margin-bottom: 1rem;
@@ -97,7 +121,6 @@ span {
 
 
 /*themes*/
-
 
 #themes {
   height: 3rem;

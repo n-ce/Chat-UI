@@ -1,9 +1,17 @@
 var input = document.querySelector('input');
-
+var c = 1;
+var vol = document.querySelector('.fa-volume-up');
+vol.onclick = function() {
+  c++;
+  vol.classList.toggle("off");
+}
 
 function send() {
   if (input.value != "") {
-    new Audio('send.ogg').play();
+
+    if (c % 2 == 1) {
+      new Audio('send.ogg').play();
+    }
     var send = document.createElement('p');
     send.innerText = input.value;
     send.className = "sender";
@@ -25,10 +33,12 @@ document.querySelector('h1').onclick = function() {
 
   if (a == 1) {
     a = 0;
+    document.querySelector('h1').style.color="white";
     document.getElementById('themes').style.display = "flex";
   }
   else {
     a = 1;
+    document.querySelector('h1').style.color="transparent";
     document.getElementById('themes').style.display = "none";
   }
 }
