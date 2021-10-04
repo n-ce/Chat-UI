@@ -30,7 +30,7 @@ function send() {
 
 
 document.getElementById('send').addEventListener('click', send);
-input.addEventListener('keydown', (e)=> { if (e.key === 'Enter') { send() }})
+input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { send() } })
 
 // Themes
 
@@ -84,6 +84,13 @@ theme[4].onclick = function() {
 }
 
 theme[5].onclick = function() {
-  themeChange('#076', '#065');
+  themeChange('#076', '#054');
   localStorage.clear();
+}
+
+window.onload = function() {
+  document.getElementById('messages').style.display =
+    document.getElementById('header').style.display =
+    document.getElementById('type').style.display = "flex";
+  document.getElementById('loader').style.display = "none";
 }

@@ -1,31 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
 
 :root {
-  --primary:#076;
-  --secondary: #065;
+  --primary: #076;
+  --secondary: #054;
   --lighter: #FFFD;
   --darker: #0002;
   --text: #0008;
 }
 
 html,
-body {
+body,
+#loader {
   height: 100%;
   width: 100%;
   margin: 0;
   font-family: 'Noto Sans Display', monospace;
-  background-image: linear-gradient(160deg, var(--primary), var(--secondary));
 }
 
-body{
+body,
+#loader {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-image: linear-gradient(160deg, var(--primary), var(--secondary));
+
 }
 
 
-h1,a,.fa-volume-up {
+h1,
+a,
+.fa-volume-up {
   color: transparent;
   -webkit-text-stroke: 1px white;
   margin: 0;
@@ -33,32 +38,37 @@ h1,a,.fa-volume-up {
   transition: color 0.5s ease-in-out;
 }
 
-a:focus{
-  color:white;
+a:focus {
+  color: white;
 }
-.off{-webkit-text-stroke-color: #fff7;}
+
+.off {
+  -webkit-text-stroke-color: #fff7;
+}
 
 
-#header{
-  display: flex;
+#header {
+  display: none;
   justify-content: space-between;
   align-items: center;
   width: 90%;
 }
-a{
+
+a {
   text-decoration: none;
   font-size: 1.25rem;
 }
 
-.fa-volume-up{
+.fa-volume-up {
   background: none;
   border: none;
   font-size: 1.25rem;
 }
+
 #messages {
   height: auto;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   overflow: scroll;
 }
@@ -102,7 +112,7 @@ input::placeholder {
 }
 
 #type {
-  display: flex;
+  display: none;
   margin-top: auto;
   margin-bottom: 1rem;
   width: 95%;
@@ -162,8 +172,8 @@ input::placeholder {
   background-image: linear-gradient(#076, #065);
 }
 
-@keyframes go{
-  from{
+@keyframes go {
+  from {
     margin-top: 100%;
     background-color: transparent;
   }
