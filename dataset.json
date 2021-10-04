@@ -4,8 +4,16 @@
     "r": "hello"
   },
   {
+    "s": "okay",
+    "r": "Okay."
+  },
+  {
     "s": "whats up",
-    "r": "alright"
+    "r": "not much, how about you?"
+  },
+  {
+    "s": "im okay",
+    "r": "are you sure"
   },
   {
     "s": "how are you",
@@ -13,7 +21,7 @@
   },
   {
     "s": "how do you do",
-    "r": "how are you"
+    "r": "uhh.. i dont. How do you?"
   },
   {
     "s": "thank you",
