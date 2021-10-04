@@ -6,5 +6,45 @@
   {
     "s": "whats up",
     "r": "alright"
+  },
+  {
+    "s": "how are you",
+    "r": "i am fine"
+  },
+  {
+    "s": "how do you do",
+    "r": "how are you"
+  },
+  {
+    "s": "thank you",
+    "r": "welcome"
+  },
+  {
+    "s": "how is the weather today",
+    "r": "very pleasant and beautiful"
+  },
+  {
+    "s": "are you feeling well",
+    "r": "yeah, definitely"
+  },
+  {
+    "s": "would you like a cup of coffee",
+    "r": "sure, thank you"
+  },
+  {
+    "s": "how was your day",
+    "r": "pretty hectic, i'm tired"
+  },
+  {
+    "s": "what's your favourite board game",
+    "r": "Dungeons and Dragons"
+  },
+  {
+    "s": "what are your plans for the weekend",
+    "r": "i'm gonna go cycling and visit the new bookstore"
+  },
+  {
+    "s": "have you travelled outside your country",
+    "r": "no, have you?"
   }
 ]
