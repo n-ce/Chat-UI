@@ -22,7 +22,10 @@ function send() {
       });
     recv.className = "receiver";
     message.appendChild(recv);
-    if (c % 2 == 1) { new Audio('send.ogg').play() }
+    if (c % 2 == 1) { 
+      new Audio('send.ogg').play();
+      message.scrollTop = document.querySelectorAll('.receiver')[document.querySelectorAll('.receiver').length-1].offsetTop - 10
+    }
     setTimeout(function() { input.value = '' }, 100)
   }
 }
