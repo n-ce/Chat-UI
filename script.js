@@ -18,7 +18,7 @@ function send() {
       .then(res => res.json())
       .then(data => {
         const foundIndex = data.findIndex(d => d.s.toLowerCase() === input.value.toLowerCase());
-        recv.innerText = foundIndex > -1 ? data[foundIndex].r : "I don't understand";
+        recv.innerText = foundIndex > -1 ? data[foundIndex].r : "I don't understand..atleast for now. But soon I will.";
       });
     recv.className = "receiver";
     message.appendChild(recv);
