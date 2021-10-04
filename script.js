@@ -11,6 +11,7 @@ function send() {
     const message = document.getElementById('messages');
     const send = document.createElement('p');
     const recv = send.cloneNode(true);
+    const recNode = document.querySelectorAll('.receiver');
     send.innerText = input.value;
     send.className = "sender";
     message.appendChild(send);
@@ -22,9 +23,11 @@ function send() {
       });
     recv.className = "receiver";
     message.appendChild(recv);
-    if (c % 2 == 1) { new Audio('send.ogg').play() }
+    if (c % 2 == 1) { 
+      new Audio('send.ogg').play();
+    }
+    message.scrollTop = recNode[recNode.length-1].offsetTop - 10;
     setTimeout(function() { input.value = '' }, 100);
-    
   }
 }
 
