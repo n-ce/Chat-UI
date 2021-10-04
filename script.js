@@ -7,7 +7,7 @@ vol.addEventListener('click', function() {
 });
 
 function send() {
-  if (input.value != "") {
+  if (input.value != ""&&input.value!=" ") {
     const message = document.getElementById('messages');
     const send = document.createElement('p');
     const recv = send.cloneNode(true);
@@ -23,11 +23,10 @@ function send() {
     recv.className = "receiver";
     message.appendChild(recv);
     if (c % 2 == 1) { new Audio('send.ogg').play() }
-    setTimeout(function() { input.value = '' }, 100)
+    setTimeout(function() { input.value = '' }, 100);
+    
   }
 }
-
-
 
 document.getElementById('send').addEventListener('click', send);
 input.addEventListener('keydown', (e) => { if (e.key === 'Enter') { send() } })

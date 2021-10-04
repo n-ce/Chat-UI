@@ -24,7 +24,6 @@ body,
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(160deg, var(--primary), var(--secondary));
-
 }
 
 
@@ -49,9 +48,10 @@ a:focus {
 
 #header {
   display: none;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
+  background-color: var(--darker);
 }
 
 a {
@@ -71,7 +71,7 @@ a {
   display: none;
   flex-direction: column;
   overflow: scroll;
-}
+  }
 
 p {
   min-height: 2rem;
